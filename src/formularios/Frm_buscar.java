@@ -89,6 +89,7 @@ public class Frm_buscar extends javax.swing.JPanel {
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Inserte Datos del Circuito", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 1, 18))); // NOI18N
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btn_guardar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/check.png"))); // NOI18N
         btn_guardar.setToolTipText("");
@@ -102,6 +103,7 @@ public class Frm_buscar extends javax.swing.JPanel {
                 btn_guardarActionPerformed(evt);
             }
         });
+        jPanel2.add(btn_guardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(672, 398, 78, 64));
 
         btn_borrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/cerrar.png"))); // NOI18N
         btn_borrar.setToolTipText("");
@@ -110,262 +112,126 @@ public class Frm_buscar extends javax.swing.JPanel {
                 btn_borrarMouseClicked(evt);
             }
         });
+        jPanel2.add(btn_borrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 398, 84, 64));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/PolBaCo.png"))); // NOI18N
         jLabel2.setText("jLabel2");
+        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(68, 65, 450, 375));
 
         In_vcc.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 In_vccActionPerformed(evt);
             }
         });
+        jPanel2.add(In_vcc, new org.netbeans.lib.awtextra.AbsoluteConstraints(562, 24, 52, -1));
 
         jLabel4.setFont(new java.awt.Font("Consolas", 1, 14)); // NOI18N
         jLabel4.setText("VCC: ");
+        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(518, 26, -1, -1));
 
         jLabel3.setFont(new java.awt.Font("Consolas", 1, 14)); // NOI18N
         jLabel3.setText("R1: ");
+        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(518, 53, -1, -1));
+        jPanel2.add(In_RB, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 51, 54, -1));
 
         In_RC.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 In_RCActionPerformed(evt);
             }
         });
+        jPanel2.add(In_RC, new org.netbeans.lib.awtextra.AbsoluteConstraints(562, 77, 50, -1));
 
         jLabel5.setFont(new java.awt.Font("Consolas", 1, 14)); // NOI18N
         jLabel5.setText("R2: ");
+        jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(518, 79, -1, -1));
 
         jLabel6.setFont(new java.awt.Font("Consolas", 1, 14)); // NOI18N
         jLabel6.setText("VBB: ");
+        jPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(518, 117, -1, -1));
+        jPanel2.add(In_VBB, new org.netbeans.lib.awtextra.AbsoluteConstraints(562, 115, 50, -1));
+        jPanel2.add(In_B, new org.netbeans.lib.awtextra.AbsoluteConstraints(562, 146, 50, -1));
 
         jLabel7.setFont(new java.awt.Font("Consolas", 1, 14)); // NOI18N
         jLabel7.setText("B: ");
+        jPanel2.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(518, 146, -1, -1));
 
         jLabel8.setText("Ib=");
+        jPanel2.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(569, 215, -1, -1));
 
         jLabel9.setText("Ic=");
+        jPanel2.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 235, -1, -1));
 
         jLabel10.setText("Ie=");
+        jPanel2.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(569, 255, -1, -1));
 
         jLabel11.setText("Vce=");
+        jPanel2.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(562, 275, -1, -1));
 
         jLabel12.setText("Vrc=");
+        jPanel2.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(564, 289, -1, -1));
 
         jLabel13.setText("Vrb=");
+        jPanel2.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(563, 309, -1, -1));
 
         jLabel14.setText("Vre=");
+        jPanel2.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(563, 329, -1, -1));
 
         jLabel15.setText("Vb=");
+        jPanel2.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(802, 215, -1, -1));
 
         jLabel16.setText("Vc=");
+        jPanel2.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(803, 235, -1, -1));
 
         jLabel17.setText("Ve=");
+        jPanel2.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(802, 255, -1, -1));
 
         jLabel18.setText("Icsat=");
+        jPanel2.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 275, -1, -1));
 
         jLabel19.setText("Vceq=");
+        jPanel2.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(791, 295, -1, -1));
 
         jLabel20.setText("Icq=");
+        jPanel2.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(799, 315, -1, -1));
 
         label_ib.setText(".");
+        jPanel2.add(label_ib, new org.netbeans.lib.awtextra.AbsoluteConstraints(605, 215, -1, -1));
 
         label_ic.setText(".");
+        jPanel2.add(label_ic, new org.netbeans.lib.awtextra.AbsoluteConstraints(605, 235, -1, -1));
 
         label_ie.setText(".");
+        jPanel2.add(label_ie, new org.netbeans.lib.awtextra.AbsoluteConstraints(605, 255, -1, -1));
 
         label_vce.setText(".");
+        jPanel2.add(label_vce, new org.netbeans.lib.awtextra.AbsoluteConstraints(605, 275, -1, -1));
 
         label_vrc.setText(".");
+        jPanel2.add(label_vrc, new org.netbeans.lib.awtextra.AbsoluteConstraints(605, 289, -1, -1));
 
         label_vrb.setText(".");
+        jPanel2.add(label_vrb, new org.netbeans.lib.awtextra.AbsoluteConstraints(605, 309, -1, -1));
 
         label_vre.setText(".");
+        jPanel2.add(label_vre, new org.netbeans.lib.awtextra.AbsoluteConstraints(605, 329, -1, -1));
 
         label_vb.setText(".");
+        jPanel2.add(label_vb, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 215, -1, -1));
 
         label_vc.setText(".");
+        jPanel2.add(label_vc, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 235, -1, -1));
 
         label_ve.setText(".");
+        jPanel2.add(label_ve, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 255, -1, -1));
 
         label_icsat.setText(".");
+        jPanel2.add(label_icsat, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 275, -1, -1));
 
         label_vceq.setText(".");
+        jPanel2.add(label_vceq, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 295, -1, -1));
 
         label_icq.setText(".");
-
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(62, 62, 62)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 450, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addComponent(jLabel4)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(In_vcc, javax.swing.GroupLayout.DEFAULT_SIZE, 212, Short.MAX_VALUE))
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addComponent(jLabel7)
-                                .addGap(20, 20, 20)
-                                .addComponent(In_B))
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addComponent(jLabel3)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(In_RB))
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel5)
-                                    .addComponent(jLabel6))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(In_RC)
-                                    .addComponent(In_VBB))))
-                        .addGap(80, 80, 80))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btn_guardar, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(btn_borrar, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap())
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(44, 44, 44)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jLabel9, javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(jLabel8, javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(jLabel10, javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(jLabel11, javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(jLabel12, javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(jLabel13, javax.swing.GroupLayout.Alignment.TRAILING))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 1, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jLabel14)))
-                        .addGap(18, 18, 18)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addComponent(label_vre)
-                                .addGap(179, 179, 179))
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(label_ib)
-                                    .addComponent(label_ic)
-                                    .addComponent(label_ie)
-                                    .addComponent(label_vce)
-                                    .addComponent(label_vrc)
-                                    .addComponent(label_vrb))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel2Layout.createSequentialGroup()
-                                        .addGap(12, 12, 12)
-                                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jLabel15, javax.swing.GroupLayout.Alignment.TRAILING)
-                                            .addComponent(jLabel16, javax.swing.GroupLayout.Alignment.TRAILING)))
-                                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(jLabel17, javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addComponent(jLabel18, javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addComponent(jLabel19, javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addComponent(jLabel20, javax.swing.GroupLayout.Alignment.TRAILING)))
-                                .addGap(18, 18, 18)
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(label_vb)
-                                    .addComponent(label_vc)
-                                    .addComponent(label_ve)
-                                    .addComponent(label_icsat)
-                                    .addComponent(label_vceq)
-                                    .addComponent(label_icq))))
-                        .addContainerGap())))
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel4)
-                    .addComponent(In_vcc, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(7, 7, 7)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel3)
-                            .addComponent(In_RB, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel5)
-                            .addComponent(In_RC, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel6)
-                            .addComponent(In_VBB, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel7)
-                            .addComponent(In_B, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(49, 49, 49)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jLabel8)
-                                    .addComponent(label_ib))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jLabel9)
-                                    .addComponent(label_ic))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jLabel10)
-                                    .addComponent(label_ie))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jLabel11)
-                                    .addComponent(label_vce))
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jLabel12)
-                                    .addComponent(label_vrc))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jLabel13)
-                                    .addComponent(label_vrb))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jLabel14)
-                                    .addComponent(label_vre)))
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jLabel15)
-                                    .addComponent(label_vb))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jLabel16)
-                                    .addComponent(label_vc))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jLabel17)
-                                    .addComponent(label_ve))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jLabel18)
-                                    .addComponent(label_icsat))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jLabel19)
-                                    .addComponent(label_vceq))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jLabel20)
-                                    .addComponent(label_icq))
-                                .addGap(14, 14, 14)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(btn_borrar, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btn_guardar, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addContainerGap())
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(21, 21, 21)
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 375, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 33, Short.MAX_VALUE))))
-        );
+        jPanel2.add(label_icq, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 315, -1, -1));
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 150, 860, 480));
 

@@ -24,7 +24,7 @@ public final class Frm_menuprincipal extends javax.swing.JFrame {
     Frm_eliminar frm_eliminar = new Frm_eliminar();
     Frm_modificacion frm_modificacion = new Frm_modificacion();
     Frm_retro frm_retro = new Frm_retro();
-
+    creditos cred = new creditos(); 
     
     CardLayout Vista; 
     
@@ -49,11 +49,18 @@ public final class Frm_menuprincipal extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         btn_emisor = new javax.swing.JToggleButton();
         btn_divisor = new javax.swing.JToggleButton();
-        btn_base = new javax.swing.JToggleButton();
         btn_salir = new javax.swing.JToggleButton();
         btn_fija = new javax.swing.JToggleButton();
         btn_retro = new javax.swing.JToggleButton();
+        btn_base1 = new javax.swing.JToggleButton();
         pnl_Vista_Principal = new javax.swing.JPanel();
+        jPanel3 = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -80,7 +87,7 @@ public final class Frm_menuprincipal extends javax.swing.JFrame {
                 btn_emisorActionPerformed(evt);
             }
         });
-        jPanel1.add(btn_emisor, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, 230, 50));
+        jPanel1.add(btn_emisor, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, 230, 50));
 
         btn_divisor.setBackground(new java.awt.Color(255, 255, 255));
         btn_divisor.setFont(new java.awt.Font("Consolas", 1, 18)); // NOI18N
@@ -93,20 +100,7 @@ public final class Frm_menuprincipal extends javax.swing.JFrame {
                 btn_divisorActionPerformed(evt);
             }
         });
-        jPanel1.add(btn_divisor, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 220, 230, 50));
-
-        btn_base.setBackground(new java.awt.Color(255, 255, 255));
-        btn_base.setFont(new java.awt.Font("Consolas", 1, 18)); // NOI18N
-        btn_base.setText("Base Comun");
-        btn_base.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        btn_base.setVerticalAlignment(javax.swing.SwingConstants.TOP);
-        btn_base.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
-        btn_base.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_baseActionPerformed(evt);
-            }
-        });
-        jPanel1.add(btn_base, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 390, 209, 60));
+        jPanel1.add(btn_divisor, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, 230, 50));
 
         btn_salir.setBackground(new java.awt.Color(255, 255, 255));
         btn_salir.setFont(new java.awt.Font("Consolas", 1, 18)); // NOI18N
@@ -153,12 +147,54 @@ public final class Frm_menuprincipal extends javax.swing.JFrame {
                 btn_retroActionPerformed(evt);
             }
         });
-        jPanel1.add(btn_retro, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 290, 220, 60));
+        jPanel1.add(btn_retro, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 240, 220, 60));
+
+        btn_base1.setBackground(new java.awt.Color(255, 255, 255));
+        btn_base1.setFont(new java.awt.Font("Consolas", 1, 18)); // NOI18N
+        btn_base1.setText("Base Comun");
+        btn_base1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btn_base1.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        btn_base1.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
+        btn_base1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_base1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btn_base1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 310, 209, 60));
 
         jPanel2.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 290, 620));
 
         pnl_Vista_Principal.setBackground(new java.awt.Color(204, 255, 255));
         pnl_Vista_Principal.setLayout(new java.awt.CardLayout());
+
+        jPanel3.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/uaalogo.png"))); // NOI18N
+        jPanel3.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 0, -1, -1));
+
+        jLabel3.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jLabel3.setText("Adriana Torres De León");
+        jPanel3.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 370, 300, 53));
+
+        jLabel4.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jLabel4.setText("UNIVERSIDAD AUTONOMA DE AGUASCALIENTES");
+        jPanel3.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 140, 630, 53));
+
+        jLabel5.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jLabel5.setText("Ing en Sistemas Computacionales");
+        jPanel3.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 180, 400, 53));
+
+        jLabel6.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jLabel6.setText("Integrantes: ");
+        jPanel3.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 240, 160, 53));
+
+        jLabel7.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jLabel7.setText("Paola Rebeca Garcia Ventura");
+        jPanel3.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 310, 350, 53));
+
+        pnl_Vista_Principal.add(jPanel3, "card2");
+
         jPanel2.add(pnl_Vista_Principal, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 30, 1000, 680));
 
         getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 1350, 740));
@@ -195,19 +231,6 @@ public final class Frm_menuprincipal extends javax.swing.JFrame {
         
     }//GEN-LAST:event_btn_divisorActionPerformed
 
-    private void btn_baseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_baseActionPerformed
-        // TODO add your handling code here:
-         if(btn_base.isSelected()){
-        
-        pnl_Vista_Principal.add(frm_buscar, "buscar");
-        Vista.show(pnl_Vista_Principal, "buscar");
-        SwingUtilities.updateComponentTreeUI(this); 
-        this.repaint();
-         }else{
-             pnl_Vista_Principal.removeAll();
-         }
-    }//GEN-LAST:event_btn_baseActionPerformed
-
     private void btn_salirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_salirActionPerformed
         // TODO add your handling code here:
         System.exit(0); 
@@ -232,6 +255,19 @@ public final class Frm_menuprincipal extends javax.swing.JFrame {
     private void btn_fijaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_fijaMouseClicked
         // TODO add your handling code here:
     }//GEN-LAST:event_btn_fijaMouseClicked
+
+    private void btn_base1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_base1ActionPerformed
+        // TODO add your handling code here:
+        if(btn_base1.isSelected()){
+        
+        pnl_Vista_Principal.add(frm_buscar, "buscar");
+        Vista.show(pnl_Vista_Principal, "buscar");
+        SwingUtilities.updateComponentTreeUI(this); 
+        this.repaint();
+         }else{
+             pnl_Vista_Principal.removeAll();
+         }
+    }//GEN-LAST:event_btn_base1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -269,15 +305,22 @@ public final class Frm_menuprincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JToggleButton btn_base;
+    private javax.swing.JToggleButton btn_base1;
     private javax.swing.JToggleButton btn_divisor;
     private javax.swing.JToggleButton btn_emisor;
     private javax.swing.JToggleButton btn_fija;
     private javax.swing.JToggleButton btn_retro;
     private javax.swing.JToggleButton btn_salir;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel pnl_Vista_Principal;
     // End of variables declaration//GEN-END:variables
 
